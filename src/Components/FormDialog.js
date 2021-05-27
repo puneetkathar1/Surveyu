@@ -36,7 +36,7 @@ export default function FormDialog(props) {
 
   function handleSubmit({}){
 
-  const url = "http://localhost:5000/register"
+  const url = "https://surveyeu.herokuapp.com/register"
 
 
 

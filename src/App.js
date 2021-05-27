@@ -21,7 +21,7 @@ import Navbar from './Components/Navbar'
 
   React.useEffect(() => {
 
-      Axios.get("http://localhost:5000/user", {
+      Axios.get("https://surveyeu.herokuapp.com/user", {
         withCredentials: true
       }).then( async function (res: AxiosResponse){  setIsAuth(res.data);  console.log(res.data)  })
 
@@ -34,8 +34,8 @@ import Navbar from './Components/Navbar'
     <BrowserRouter >
     <Navbar isAuth={isAuth} />
     
-    <Route isAuth={isAuth} path='/'  exact component={Homepage} />
-    <ProtectedRoutes  path='/myaccount' component={myaccount} isAuth={isAuth} />
+    <Route isAuth={isAuth} path='https://puneetkathar1.github.io/Surveyu'  exact component={Homepage} />
+    <ProtectedRoutes  path='https://puneetkathar1.github.io/Surveyu/myaccount' component={myaccount} isAuth={isAuth} />
     </BrowserRouter>
 
     <FormDialog setUsername={setUsername} />

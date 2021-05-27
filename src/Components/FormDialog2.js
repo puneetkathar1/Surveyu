@@ -34,16 +34,16 @@ export default function FormDialog2(props) {
 
   }
     function  handleSubmit () {
-      Axios.post("http://localhost:5000/login", {
+      Axios.post("https://surveyeu.herokuapp.com/login", {
         username: username,
         password: data.password
       }, {
         withCredentials: true
       }).then((res : AxiosResponse) => {
         
-       res.data ? history.push('/myaccount') : console.log(Error)});
+       res.data ? history.push('https://puneetkathar1.github.io/Surveyu/myaccount') : console.log(Error)});
        window.location.reload();
-       window.location.href = "/myaccount";
+       window.location.href = "https://puneetkathar1.github.io/Surveyu/myaccount";
     setOpenPopup2(false)
     } 
     
