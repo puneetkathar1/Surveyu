@@ -17,7 +17,7 @@ import Navbar from './Components/Navbar'
  function App()  {
 
   const [username, setUsername] = React.useState('');
-   var  [isAuth, setIsAuth] = React.useState(true)
+   var  [isAuth, setIsAuth] = React.useState()
 
   React.useEffect(() => {
 
